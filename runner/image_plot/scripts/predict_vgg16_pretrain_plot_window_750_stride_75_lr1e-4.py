@@ -52,14 +52,14 @@ def main():
     plot_root_path = Path(__file__).parent.parent.parent.parent.joinpath("output/features/train/window_750_stride_75")
     predictor = PlotPredictor(model_wrapper, plot_root=plot_root_path, save_root=train_save_dir,
                               transformers=VGG16Transformers())
-    predictor(batch_size=128)
+    predictor(batch_size=560)
 
     test_save_dir = save_dir.joinpath("prediction/test")
     test_save_dir.mkdir(exist_ok=True, parents=True)
     plot_root_path = Path(__file__).parent.parent.parent.parent.joinpath("output/features/test/window_750_stride_75")
     predictor = PlotPredictor(model_wrapper, plot_root=plot_root_path, save_root=test_save_dir,
                               transformers=VGG16Transformers())
-    predictor(batch_size=128)
+    predictor(batch_size=560)
 
 
 if __name__ == '__main__':
