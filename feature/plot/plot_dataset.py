@@ -8,7 +8,7 @@ from pandas import DataFrame
 
 from feature.plot import label_window
 from feature.plot.label_window import LABEL_FILE_NAME
-from model.cnn import VGG16Wrapper
+from feature.preprocess import VGG16Transformers
 from utils.data.eegdataloader import EegDataLoader
 
 RANDOM_STATE = 10
@@ -22,16 +22,17 @@ class Window:
     end: int
     target_frame_start: int
     target_frame_end: int
+    path: Path
 
 
 class PlotTestImageDataset(torch.utils.data.Dataset):
 
-    def __init__(self, plot_root: Path, transformers=None):
+    def __init__(self, plot_root: Path, transformers=VGG16Transformers()):
         self.load_plot_paths(plot_root)
         self.transformers = transformers
         self.plot_paths = self.load_plot_paths(plot_root)
-        self.window, self.stride = self.to_window_stride(self.plot_paths[0])
-        self.frames = []
+        self.window_size, self.stride_size = self.to_window_stride(self.plot_paths[0])
+        self.window_metas = [self.to_window(path) for path in self.plot_paths]
 
     @staticmethod
     def load_plot_paths(plot_root):
@@ -50,16 +51,16 @@ class PlotTestImageDataset(torch.utils.data.Dataset):
         start = int(matched.group("start"))
         end = int(matched.group("end"))
         target_frame_start = end
-        target_frame_end = end + self.window
+        target_frame_end = end + self.window_size
 
         return Window(int(matched.group("subject")), int(matched.group("series")),
-                      start, end, target_frame_start, target_frame_end)
+                      start, end, target_frame_start, target_frame_end, plot_path)
 
     @staticmethod
     def to_window_stride(plot_path):
         window_config = plot_path.parent.parent.parent.name
         matched = label_window.PlotLabeler.PLOT_ROOT_DIR_PATTERN.match(window_config)
-        return matched.group(1), matched.group(2)
+        return int(matched.group(1)), int(matched.group(2))
 
     def __getitem__(self, index):
         sample = skimage.io.imread(str(self.plot_paths[index]))[:, :, :3]
@@ -126,12 +127,3 @@ class PlotTrainImageDataset(torch.utils.data.Dataset):
         return self.label_df.shape[0]
 
 
-class FramePredictor(object):
-
-    def __init__(self, model_wrapper: VGG16Wrapper, plot_root: Path, transformers=None):
-        self.dataset = PlotTestImageDataset(plot_root, transformers)
-        self.model_wrapper = model_wrapper
-
-    def __call__(self, batch_size, *args, **kwargs):
-        predicted = self.model_wrapper.predict(self.dataset, batch_size)
-        =

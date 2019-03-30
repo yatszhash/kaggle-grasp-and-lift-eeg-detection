@@ -57,6 +57,13 @@ class TrainEegSeries(EegSeries):
 class EegDataSet:
     subjects: List[List[TrainEegSeries]]
     N_EVENTS = 6
+    EVENT_COLUMNS = ["HandStart",
+                     "FirstDigitTouch",
+                     "BothStartLoadPhase",
+                     "LiftOff",
+                     "Replace",
+                     "BothReleased"
+                     ]
 
     def __post_init__(self):
         self.data_columns = list(self.subjects[0][0].data_df.columns)

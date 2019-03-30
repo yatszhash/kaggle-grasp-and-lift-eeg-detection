@@ -11,7 +11,8 @@ import sys
 from pathlib import Path
 
 from feature.plot.plot_dataset import PlotTrainValidDataSets
-from model.cnn import VGG16Wrapper, VGG16Transformers
+from feature.preprocess import VGG16Transformers
+from model.cnn import VGG16Wrapper
 
 n_cpus = os.cpu_count()
 

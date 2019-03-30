@@ -9,7 +9,6 @@ import torchvision
 from sklearn.metrics import roc_auc_score
 from torch import nn, optim
 from torch.utils.data import DataLoader, Dataset
-from torchvision import transforms
 from tqdm import tqdm
 
 from utils.data.eegdataloader import EegDataSet
@@ -223,18 +222,3 @@ class VGG16Wrapper(object):
         self.model.eval()
         return np.vstack([self.model(x).cpu().detach().numpy() for x in tqdm(dataloader)])
 
-
-class VGG16Transformers:
-    SIZE = 224
-
-    def __init__(self):
-        transform_list = [
-            transforms.ToPILImage(),
-            transforms.Resize((self.SIZE, self.SIZE)),
-            transforms.ToTensor(),
-            transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
-        ]
-        self.transforms = transforms.Compose(transform_list)
-
-    def __call__(self, *args, **kwargs):
-        return self.transforms(*args, **kwargs)

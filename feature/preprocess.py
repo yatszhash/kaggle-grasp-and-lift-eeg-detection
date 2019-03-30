@@ -1,3 +1,5 @@
+from torchvision import transforms
+
 from utils.data.eegdataloader import EegDataSet
 
 
@@ -78,3 +80,19 @@ class MedianScaler(object):
             for eeg_series in subject:
                 self.transform(eeg_series.data_df)
         return datasets
+
+
+class VGG16Transformers:
+    SIZE = 224
+
+    def __init__(self):
+        transform_list = [
+            transforms.ToPILImage(),
+            transforms.Resize((self.SIZE, self.SIZE)),
+            transforms.ToTensor(),
+            transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+        ]
+        self.transforms = transforms.Compose(transform_list)
+
+    def __call__(self, *args, **kwargs):
+        return self.transforms(*args, **kwargs)
