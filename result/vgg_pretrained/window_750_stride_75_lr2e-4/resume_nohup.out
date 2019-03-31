@@ -1,0 +1,349 @@
+/home/yohyohyonyon/kaggle/kaggle-grasp-lift-eeg-detection/feature/plot/to_images.py:5: UserWarning: 
+This call to matplotlib.use() has no effect because the backend has already
+been chosen; matplotlib.use() must be called *before* pylab, matplotlib.pyplot,
+or matplotlib.backends is imported for the first time.
+
+The backend was *originally* set to 'Qt5Agg' by the following code:
+  File "runner/image_plot/scripts/vgg16_pretrain_plot_window_750_stride_75_lr1e-4.py", line 13, in <module>
+    from feature.plot.plot_loader import PlotTrainValidDataSets, VGG16Transformers
+  File "/home/yohyohyonyon/kaggle/kaggle-grasp-lift-eeg-detection/feature/plot/plot_loader.py", line 4, in <module>
+    import skimage.io
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/__init__.py", line 15, in <module>
+    reset_plugins()
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 95, in reset_plugins
+    _load_preferred_plugins()
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 75, in _load_preferred_plugins
+    _set_plugin(p_type, preferred_plugins['all'])
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 87, in _set_plugin
+    use_plugin(plugin, kind=plugin_type)
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 258, in use_plugin
+    _load(name)
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 302, in _load
+    fromlist=[modname])
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/_plugins/matplotlib_plugin.py", line 4, in <module>
+    import matplotlib.pyplot as plt
+  File "/opt/anaconda3/lib/python3.7/site-packages/matplotlib/pyplot.py", line 71, in <module>
+    from matplotlib.backends import pylab_setup
+  File "/opt/anaconda3/lib/python3.7/site-packages/matplotlib/backends/__init__.py", line 16, in <module>
+    line for line in traceback.format_stack()
+
+
+  mpl.use('Agg')
+INFO:model.cnn:train with data size: 199032
+INFO:model.cnn:valid with data size: 40731
+  0%|          | 0/40 [00:00<?, ?it/s]INFO:model.cnn:training 1  / 40 epochs
+INFO:model.cnn:******train loss at epoch 1: 0.1636866 :
+INFO:model.cnn:******train score at epoch 1: 0.697 :
+INFO:model.cnn:******valid loss at epoch 1: 0.1310241 :
+INFO:model.cnn:******valid score at epoch 1: 0.836 :
+INFO:model.cnn:validation score is improved from 0.000 to 0.836
+INFO:model.cnn:Checkpoint saved
+  2%|▎         | 1/40 [1:14:10<48:12:48, 4450.47s/it]INFO:model.cnn:training 2  / 40 epochs
+INFO:model.cnn:******train loss at epoch 2: 0.1288876 :
+INFO:model.cnn:******train score at epoch 2: 0.838 :
+INFO:model.cnn:******valid loss at epoch 2: 0.1235097 :
+INFO:model.cnn:******valid score at epoch 2: 0.867 :
+INFO:model.cnn:validation score is improved from 0.836 to 0.867
+INFO:model.cnn:Checkpoint saved
+  5%|▌         | 2/40 [2:40:26<49:16:33, 4668.26s/it]INFO:model.cnn:training 3  / 40 epochs
+INFO:model.cnn:******train loss at epoch 3: 0.1169038 :
+INFO:model.cnn:******train score at epoch 3: 0.875 :
+INFO:model.cnn:******valid loss at epoch 3: 0.1311730 :
+INFO:model.cnn:******valid score at epoch 3: 0.860 :
+  8%|▊         | 3/40 [4:06:23<49:29:01, 4814.63s/it]INFO:model.cnn:training 4  / 40 epochs
+INFO:model.cnn:******train loss at epoch 4: 0.1088110 :
+INFO:model.cnn:******train score at epoch 4: 0.895 :
+INFO:model.cnn:******valid loss at epoch 4: 0.1322936 :
+INFO:model.cnn:******valid score at epoch 4: 0.867 :
+INFO:model.cnn:validation score is improved from 0.867 to 0.867
+INFO:model.cnn:Checkpoint saved
+ 10%|█         | 4/40 [5:32:05<49:07:50, 4913.06s/it]INFO:model.cnn:training 5  / 40 epochs
+INFO:model.cnn:******train loss at epoch 5: 0.1019691 :
+INFO:model.cnn:******train score at epoch 5: 0.910 :
+INFO:model.cnn:******valid loss at epoch 5: 0.1465497 :
+INFO:model.cnn:******valid score at epoch 5: 0.851 :
+ 12%|█▎        | 5/40 [6:57:32<48:23:18, 4977.10s/it]INFO:model.cnn:training 6  / 40 epochs
+INFO:model.cnn:******train loss at epoch 6: 0.0965627 :
+INFO:model.cnn:******train score at epoch 6: 0.921 :
+INFO:model.cnn:******valid loss at epoch 6: 0.1409517 :
+INFO:model.cnn:******valid score at epoch 6: 0.872 :
+INFO:model.cnn:validation score is improved from 0.867 to 0.872
+INFO:model.cnn:Checkpoint saved
+ 15%|█▌        | 6/40 [8:22:48<47:24:02, 5018.90s/it]INFO:model.cnn:training 7  / 40 epochs
+INFO:model.cnn:******train loss at epoch 7: 0.0916398 :
+INFO:model.cnn:******train score at epoch 7: 0.931 :
+INFO:model.cnn:******valid loss at epoch 7: 0.1471826 :
+INFO:model.cnn:******valid score at epoch 7: 0.852 :
+ 18%|█▊        | 7/40 [9:47:56<46:15:07, 5045.68s/it]INFO:model.cnn:training 8  / 40 epochs
+INFO:model.cnn:******train loss at epoch 8: 0.0866675 :
+INFO:model.cnn:******train score at epoch 8: 0.940 :
+INFO:model.cnn:******valid loss at epoch 8: 0.1493873 :
+INFO:model.cnn:******valid score at epoch 8: 0.863 :
+ 20%|██        | 8/40 [11:12:59<45:00:04, 5062.63s/it]INFO:model.cnn:training 9  / 40 epochs
+INFO:model.cnn:******train loss at epoch 9: 0.0828257 :
+INFO:model.cnn:******train score at epoch 9: 0.945 :
+INFO:model.cnn:******valid loss at epoch 9: 0.1574305 :
+INFO:model.cnn:******valid score at epoch 9: 0.858 :
+ 22%|██▎       | 9/40 [12:37:53<43:40:37, 5072.19s/it]INFO:model.cnn:training 10  / 40 epochs
+INFO:model.cnn:******train loss at epoch 10: 0.0788733 :
+INFO:model.cnn:******train score at epoch 10: 0.951 :
+INFO:model.cnn:******valid loss at epoch 10: 0.1684743 :
+INFO:model.cnn:******valid score at epoch 10: 0.840 :
+ 25%|██▌       | 10/40 [14:02:36<42:17:37, 5075.27s/it]INFO:model.cnn:training 11  / 40 epochs
+INFO:model.cnn:******train loss at epoch 11: 0.0757758 :
+INFO:model.cnn:******train score at epoch 11: 0.956 :
+INFO:model.cnn:******valid loss at epoch 11: 0.1829739 :
+INFO:model.cnn:******valid score at epoch 11: 0.851 :
+INFO:model.cnn:======early stopped=====
+
+INFO:model.cnn:train done!
+/home/yohyohyonyon/kaggle/kaggle-grasp-lift-eeg-detection/feature/plot/to_images.py:5: UserWarning: 
+This call to matplotlib.use() has no effect because the backend has already
+been chosen; matplotlib.use() must be called *before* pylab, matplotlib.pyplot,
+or matplotlib.backends is imported for the first time.
+
+The backend was *originally* set to 'Qt5Agg' by the following code:
+  File "runner/image_plot/scripts/vgg16_pretrain_plot_window_750_stride_75_resume_lr1e-4.py", line 13, in <module>
+    from feature.plot.plot_loader import PlotTrainValidDataSets, VGG16Transformers
+  File "/home/yohyohyonyon/kaggle/kaggle-grasp-lift-eeg-detection/feature/plot/plot_loader.py", line 4, in <module>
+    import skimage.io
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/__init__.py", line 15, in <module>
+    reset_plugins()
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 95, in reset_plugins
+    _load_preferred_plugins()
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 75, in _load_preferred_plugins
+    _set_plugin(p_type, preferred_plugins['all'])
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 87, in _set_plugin
+    use_plugin(plugin, kind=plugin_type)
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 258, in use_plugin
+    _load(name)
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 302, in _load
+    fromlist=[modname])
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/_plugins/matplotlib_plugin.py", line 4, in <module>
+    import matplotlib.pyplot as plt
+  File "/opt/anaconda3/lib/python3.7/site-packages/matplotlib/pyplot.py", line 71, in <module>
+    from matplotlib.backends import pylab_setup
+  File "/opt/anaconda3/lib/python3.7/site-packages/matplotlib/backends/__init__.py", line 16, in <module>
+    line for line in traceback.format_stack()
+
+
+  mpl.use('Agg')
+Traceback (most recent call last):
+  File "runner/image_plot/scripts/vgg16_pretrain_plot_window_750_stride_75_resume_lr1e-4.py", line 50, in <module>
+    main()
+  File "runner/image_plot/scripts/vgg16_pretrain_plot_window_750_stride_75_resume_lr1e-4.py", line 36, in main
+    model_pickled=save_dir.joinpath("epoch_11/vgg16_pretrained"))
+  File "/home/yohyohyonyon/kaggle/kaggle-grasp-lift-eeg-detection/model/cnn.py", line 55, in __init__
+    self.model.load_state_dict(torch.load(str(model_pickled)))
+  File "/opt/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 769, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for Sequential:
+	Missing key(s) in state_dict: "0.features.0.weight", "0.features.0.bias", "0.features.2.weight", "0.features.2.bias", "0.features.5.weight", "0.features.5.bias", "0.features.7.weight", "0.features.7.bias", "0.features.10.weight", "0.features.10.bias", "0.features.12.weight", "0.features.12.bias", "0.features.14.weight", "0.features.14.bias", "0.features.17.weight", "0.features.17.bias", "0.features.19.weight", "0.features.19.bias", "0.features.21.weight", "0.features.21.bias", "0.features.24.weight", "0.features.24.bias", "0.features.26.weight", "0.features.26.bias", "0.features.28.weight", "0.features.28.bias", "0.classifier.0.weight", "0.classifier.0.bias", "0.classifier.3.weight", "0.classifier.3.bias", "0.classifier.6.weight", "0.classifier.6.bias", "2.weight", "2.bias". 
+	Unexpected key(s) in state_dict: "module.0.features.0.weight", "module.0.features.0.bias", "module.0.features.2.weight", "module.0.features.2.bias", "module.0.features.5.weight", "module.0.features.5.bias", "module.0.features.7.weight", "module.0.features.7.bias", "module.0.features.10.weight", "module.0.features.10.bias", "module.0.features.12.weight", "module.0.features.12.bias", "module.0.features.14.weight", "module.0.features.14.bias", "module.0.features.17.weight", "module.0.features.17.bias", "module.0.features.19.weight", "module.0.features.19.bias", "module.0.features.21.weight", "module.0.features.21.bias", "module.0.features.24.weight", "module.0.features.24.bias", "module.0.features.26.weight", "module.0.features.26.bias", "module.0.features.28.weight", "module.0.features.28.bias", "module.0.classifier.0.weight", "module.0.classifier.0.bias", "module.0.classifier.3.weight", "module.0.classifier.3.bias", "module.0.classifier.6.weight", "module.0.classifier.6.bias", "module.2.weight", "module.2.bias". 
+/home/yohyohyonyon/kaggle/kaggle-grasp-lift-eeg-detection/feature/plot/to_images.py:5: UserWarning: 
+This call to matplotlib.use() has no effect because the backend has already
+been chosen; matplotlib.use() must be called *before* pylab, matplotlib.pyplot,
+or matplotlib.backends is imported for the first time.
+
+The backend was *originally* set to 'Qt5Agg' by the following code:
+  File "runner/image_plot/scripts/vgg16_pretrain_plot_window_750_stride_75_resume_lr1e-4.py", line 13, in <module>
+    from feature.plot.plot_loader import PlotTrainValidDataSets, VGG16Transformers
+  File "/home/yohyohyonyon/kaggle/kaggle-grasp-lift-eeg-detection/feature/plot/plot_loader.py", line 4, in <module>
+    import skimage.io
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/__init__.py", line 15, in <module>
+    reset_plugins()
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 95, in reset_plugins
+    _load_preferred_plugins()
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 75, in _load_preferred_plugins
+    _set_plugin(p_type, preferred_plugins['all'])
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 87, in _set_plugin
+    use_plugin(plugin, kind=plugin_type)
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 258, in use_plugin
+    _load(name)
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 302, in _load
+    fromlist=[modname])
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/_plugins/matplotlib_plugin.py", line 4, in <module>
+    import matplotlib.pyplot as plt
+  File "/opt/anaconda3/lib/python3.7/site-packages/matplotlib/pyplot.py", line 71, in <module>
+    from matplotlib.backends import pylab_setup
+  File "/opt/anaconda3/lib/python3.7/site-packages/matplotlib/backends/__init__.py", line 16, in <module>
+    line for line in traceback.format_stack()
+
+
+  mpl.use('Agg')
+Traceback (most recent call last):
+  File "runner/image_plot/scripts/vgg16_pretrain_plot_window_750_stride_75_resume_lr1e-4.py", line 50, in <module>
+    main()
+  File "runner/image_plot/scripts/vgg16_pretrain_plot_window_750_stride_75_resume_lr1e-4.py", line 36, in main
+    model_pickled=save_dir.joinpath("epoch_11/vgg16_pretrained"))
+  File "/home/yohyohyonyon/kaggle/kaggle-grasp-lift-eeg-detection/model/cnn.py", line 55, in __init__
+    self.model.load_state_dict(torch.load(str(model_pickled))["state_dict"])
+KeyError: 'state_dict'
+/home/yohyohyonyon/kaggle/kaggle-grasp-lift-eeg-detection/feature/plot/to_images.py:5: UserWarning: 
+This call to matplotlib.use() has no effect because the backend has already
+been chosen; matplotlib.use() must be called *before* pylab, matplotlib.pyplot,
+or matplotlib.backends is imported for the first time.
+
+The backend was *originally* set to 'Qt5Agg' by the following code:
+  File "runner/image_plot/scripts/vgg16_pretrain_plot_window_750_stride_75_resume_lr1e-4.py", line 13, in <module>
+    from feature.plot.plot_loader import PlotTrainValidDataSets, VGG16Transformers
+  File "/home/yohyohyonyon/kaggle/kaggle-grasp-lift-eeg-detection/feature/plot/plot_loader.py", line 4, in <module>
+    import skimage.io
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/__init__.py", line 15, in <module>
+    reset_plugins()
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 95, in reset_plugins
+    _load_preferred_plugins()
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 75, in _load_preferred_plugins
+    _set_plugin(p_type, preferred_plugins['all'])
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 87, in _set_plugin
+    use_plugin(plugin, kind=plugin_type)
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 258, in use_plugin
+    _load(name)
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 302, in _load
+    fromlist=[modname])
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/_plugins/matplotlib_plugin.py", line 4, in <module>
+    import matplotlib.pyplot as plt
+  File "/opt/anaconda3/lib/python3.7/site-packages/matplotlib/pyplot.py", line 71, in <module>
+    from matplotlib.backends import pylab_setup
+  File "/opt/anaconda3/lib/python3.7/site-packages/matplotlib/backends/__init__.py", line 16, in <module>
+    line for line in traceback.format_stack()
+
+
+  mpl.use('Agg')
+INFO:model.cnn:train with data size: 200820
+INFO:model.cnn:valid with data size: 38943
+  0%|          | 0/40 [00:00<?, ?it/s]INFO:model.cnn:training 1  / 40 epochs
+/home/yohyohyonyon/kaggle/kaggle-grasp-lift-eeg-detection/feature/plot/to_images.py:5: UserWarning: 
+This call to matplotlib.use() has no effect because the backend has already
+been chosen; matplotlib.use() must be called *before* pylab, matplotlib.pyplot,
+or matplotlib.backends is imported for the first time.
+
+The backend was *originally* set to 'Qt5Agg' by the following code:
+  File "runner/image_plot/scripts/vgg16_pretrain_plot_window_750_stride_75_resume_lr1e-4.py", line 13, in <module>
+    from feature.plot.plot_loader import PlotTrainValidDataSets, VGG16Transformers
+  File "/home/yohyohyonyon/kaggle/kaggle-grasp-lift-eeg-detection/feature/plot/plot_loader.py", line 4, in <module>
+    import skimage.io
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/__init__.py", line 15, in <module>
+    reset_plugins()
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 95, in reset_plugins
+    _load_preferred_plugins()
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 75, in _load_preferred_plugins
+    _set_plugin(p_type, preferred_plugins['all'])
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 87, in _set_plugin
+    use_plugin(plugin, kind=plugin_type)
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 258, in use_plugin
+    _load(name)
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 302, in _load
+    fromlist=[modname])
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/_plugins/matplotlib_plugin.py", line 4, in <module>
+    import matplotlib.pyplot as plt
+  File "/opt/anaconda3/lib/python3.7/site-packages/matplotlib/pyplot.py", line 71, in <module>
+    from matplotlib.backends import pylab_setup
+  File "/opt/anaconda3/lib/python3.7/site-packages/matplotlib/backends/__init__.py", line 16, in <module>
+    line for line in traceback.format_stack()
+
+
+  mpl.use('Agg')
+Traceback (most recent call last):
+  File "runner/image_plot/scripts/vgg16_pretrain_plot_window_750_stride_75_resume_lr1e-4.py", line 51, in <module>
+    main()
+  File "runner/image_plot/scripts/vgg16_pretrain_plot_window_750_stride_75_resume_lr1e-4.py", line 28, in main
+    datasets = PlotTrainValidDataSets(plot_root_path, valid_n_subjects=2, transformers=VGG16Transformers())
+  File "/home/yohyohyonyon/kaggle/kaggle-grasp-lift-eeg-detection/feature/plot/plot_loader.py", line 67, in __init__
+    print("train subject: {} \nvalid subjects: {}".format(", ".join(self.train_subjects),
+TypeError: sequence item 0: expected str instance, int found
+/home/yohyohyonyon/kaggle/kaggle-grasp-lift-eeg-detection/feature/plot/to_images.py:5: UserWarning: 
+This call to matplotlib.use() has no effect because the backend has already
+been chosen; matplotlib.use() must be called *before* pylab, matplotlib.pyplot,
+or matplotlib.backends is imported for the first time.
+
+The backend was *originally* set to 'Qt5Agg' by the following code:
+  File "runner/image_plot/scripts/vgg16_pretrain_plot_window_750_stride_75_resume_lr1e-4.py", line 13, in <module>
+    from feature.plot.plot_loader import PlotTrainValidDataSets, VGG16Transformers
+  File "/home/yohyohyonyon/kaggle/kaggle-grasp-lift-eeg-detection/feature/plot/plot_loader.py", line 4, in <module>
+    import skimage.io
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/__init__.py", line 15, in <module>
+    reset_plugins()
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 95, in reset_plugins
+    _load_preferred_plugins()
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 75, in _load_preferred_plugins
+    _set_plugin(p_type, preferred_plugins['all'])
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 87, in _set_plugin
+    use_plugin(plugin, kind=plugin_type)
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 258, in use_plugin
+    _load(name)
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 302, in _load
+    fromlist=[modname])
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/_plugins/matplotlib_plugin.py", line 4, in <module>
+    import matplotlib.pyplot as plt
+  File "/opt/anaconda3/lib/python3.7/site-packages/matplotlib/pyplot.py", line 71, in <module>
+    from matplotlib.backends import pylab_setup
+  File "/opt/anaconda3/lib/python3.7/site-packages/matplotlib/backends/__init__.py", line 16, in <module>
+    line for line in traceback.format_stack()
+
+
+  mpl.use('Agg')
+INFO:model.cnn:train with data size: 199032
+INFO:model.cnn:valid with data size: 40731
+  0%|          | 0/40 [00:00<?, ?it/s]INFO:model.cnn:training 1  / 40 epochs
+train subject: [5, 3, 6, 4, 2, 11, 8, 7, 1, 10] 
+valid subjects: [12, 9]
+INFO:model.cnn:******train loss at epoch 1: 0.0959342 :
+INFO:model.cnn:******train score at epoch 1: 0.924 :
+INFO:model.cnn:******valid loss at epoch 1: 0.1050257 :
+INFO:model.cnn:******valid score at epoch 1: 0.913 :
+INFO:model.cnn:validation score is improved from 0.000 to 0.913
+INFO:model.cnn:Checkpoint saved
+  2%|▎         | 1/40 [1:12:52<47:22:12, 4372.62s/it]INFO:model.cnn:training 2  / 40 epochs
+INFO:model.cnn:******train loss at epoch 2: 0.0885257 :
+INFO:model.cnn:******train score at epoch 2: 0.938 :
+INFO:model.cnn:******valid loss at epoch 2: 0.1080352 :
+INFO:model.cnn:******valid score at epoch 2: 0.904 :
+  5%|▌         | 2/40 [2:37:41<48:25:26, 4587.54s/it]INFO:model.cnn:training 3  / 40 epochs
+INFO:model.cnn:******train loss at epoch 3: 0.0839606 :
+INFO:model.cnn:******train score at epoch 3: 0.945 :
+INFO:model.cnn:******valid loss at epoch 3: 0.1231595 :
+INFO:model.cnn:******valid score at epoch 3: 0.882 :
+  8%|▊         | 3/40 [4:02:24<48:40:33, 4736.05s/it]INFO:model.cnn:training 4  / 40 epochs
+INFO:model.cnn:******train loss at epoch 4: 0.0793529 :
+INFO:model.cnn:******train score at epoch 4: 0.952 :
+INFO:model.cnn:******valid loss at epoch 4: 0.1180045 :
+INFO:model.cnn:******valid score at epoch 4: 0.889 :
+ 10%|█         | 4/40 [5:27:02<48:23:11, 4838.64s/it]INFO:model.cnn:training 5  / 40 epochs
+INFO:model.cnn:******train loss at epoch 5: 0.0756811 :
+INFO:model.cnn:******train score at epoch 5: 0.957 :
+INFO:model.cnn:******valid loss at epoch 5: 0.1291069 :
+INFO:model.cnn:******valid score at epoch 5: 0.882 :
+ 12%|█▎        | 5/40 [6:51:35<47:43:32, 4908.92s/it]INFO:model.cnn:training 6  / 40 epochs
+INFO:model.cnn:******train loss at epoch 6: 0.0720796 :
+INFO:model.cnn:******train score at epoch 6: 0.961 :
+INFO:model.cnn:******valid loss at epoch 6: 0.1395324 :
+INFO:model.cnn:******valid score at epoch 6: 0.876 :
+ 15%|█▌        | 6/40 [8:16:06<46:49:19, 4957.63s/it]INFO:model.cnn:training 7  / 40 epochs
+INFO:model.cnn:******train loss at epoch 7: 0.0689011 :
+INFO:model.cnn:******train score at epoch 7: 0.965 :
+INFO:model.cnn:******valid loss at epoch 7: 0.1394846 :
+INFO:model.cnn:******valid score at epoch 7: 0.870 :
+ 18%|█▊        | 7/40 [9:40:34<45:44:54, 4990.75s/it]INFO:model.cnn:training 8  / 40 epochs
+INFO:model.cnn:******train loss at epoch 8: 0.0662697 :
+INFO:model.cnn:******train score at epoch 8: 0.968 :
+INFO:model.cnn:******valid loss at epoch 8: 0.1407705 :
+INFO:model.cnn:******valid score at epoch 8: 0.864 :
+ 20%|██        | 8/40 [11:04:57<44:33:15, 5012.36s/it]INFO:model.cnn:training 9  / 40 epochs
+INFO:model.cnn:******train loss at epoch 9: 0.0637647 :
+INFO:model.cnn:******train score at epoch 9: 0.971 :
+INFO:model.cnn:******valid loss at epoch 9: 0.1515111 :
+INFO:model.cnn:******valid score at epoch 9: 0.861 :
+ 22%|██▎       | 9/40 [12:29:15<43:16:48, 5026.07s/it]INFO:model.cnn:training 10  / 40 epochs
+INFO:model.cnn:******train loss at epoch 10: 0.0609723 :
+INFO:model.cnn:******train score at epoch 10: 0.973 :
+INFO:model.cnn:******valid loss at epoch 10: 0.1555831 :
+INFO:model.cnn:******valid score at epoch 10: 0.868 :
+ 25%|██▌       | 10/40 [13:53:33<41:57:47, 5035.57s/it]INFO:model.cnn:training 11  / 40 epochs
+INFO:model.cnn:******train loss at epoch 11: 0.0589670 :
+INFO:model.cnn:******train score at epoch 11: 0.975 :
+INFO:model.cnn:******valid loss at epoch 11: 0.1609920 :
+INFO:model.cnn:******valid score at epoch 11: 0.853 :
+INFO:model.cnn:======early stopped=====
+
+INFO:model.cnn:train done!

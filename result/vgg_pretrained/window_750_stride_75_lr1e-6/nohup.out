@@ -1,0 +1,207 @@
+/home/yohyohyonyon/kaggle/kaggle-grasp-lift-eeg-detection/feature/plot/to_images.py:5: UserWarning: 
+This call to matplotlib.use() has no effect because the backend has already
+been chosen; matplotlib.use() must be called *before* pylab, matplotlib.pyplot,
+or matplotlib.backends is imported for the first time.
+
+The backend was *originally* set to 'Qt5Agg' by the following code:
+  File "runner/image_plot/scripts/vgg16_pretrain_plot_window_750_stride_75.py", line 14, in <module>
+    from feature.plot.plot_loader import PlotTrainValidDataSets, VGG16Transformers
+  File "/home/yohyohyonyon/kaggle/kaggle-grasp-lift-eeg-detection/feature/plot/plot_loader.py", line 4, in <module>
+    import skimage.io
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/__init__.py", line 15, in <module>
+    reset_plugins()
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 95, in reset_plugins
+    _load_preferred_plugins()
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 75, in _load_preferred_plugins
+    _set_plugin(p_type, preferred_plugins['all'])
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 87, in _set_plugin
+    use_plugin(plugin, kind=plugin_type)
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 258, in use_plugin
+    _load(name)
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/manage_plugins.py", line 302, in _load
+    fromlist=[modname])
+  File "/opt/anaconda3/lib/python3.7/site-packages/skimage/io/_plugins/matplotlib_plugin.py", line 4, in <module>
+    import matplotlib.pyplot as plt
+  File "/opt/anaconda3/lib/python3.7/site-packages/matplotlib/pyplot.py", line 71, in <module>
+    from matplotlib.backends import pylab_setup
+  File "/opt/anaconda3/lib/python3.7/site-packages/matplotlib/backends/__init__.py", line 16, in <module>
+    line for line in traceback.format_stack()
+
+
+  mpl.use('Agg')
+INFO:model.cnn:train with data size: 198072
+INFO:model.cnn:valid with data size: 41691
+  0%|          | 0/60 [00:00<?, ?it/s]INFO:model.cnn:training 1  / 60 epochs
+INFO:model.cnn:******train loss at epoch 1: 0.2344211 :
+INFO:model.cnn:******train score at epoch 1: 0.515 :
+INFO:model.cnn:******valid loss at epoch 1: 0.1570636 :
+INFO:model.cnn:******valid score at epoch 1: 0.606 :
+INFO:model.cnn:validation score is improved from 0.000 to 0.606
+INFO:model.cnn:Checkpoint saved
+  2%|▏         | 1/60 [1:14:12<72:58:09, 4452.37s/it]INFO:model.cnn:training 2  / 60 epochs
+INFO:model.cnn:******train loss at epoch 2: 0.1895865 :
+INFO:model.cnn:******train score at epoch 2: 0.572 :
+INFO:model.cnn:******valid loss at epoch 2: 0.1554189 :
+INFO:model.cnn:******valid score at epoch 2: 0.646 :
+INFO:model.cnn:validation score is improved from 0.606 to 0.646
+INFO:model.cnn:Checkpoint saved
+  3%|▎         | 2/60 [2:40:48<75:19:35, 4675.45s/it]INFO:model.cnn:training 3  / 60 epochs
+INFO:model.cnn:******train loss at epoch 3: 0.1792896 :
+INFO:model.cnn:******train score at epoch 3: 0.635 :
+INFO:model.cnn:******valid loss at epoch 3: 0.1538065 :
+INFO:model.cnn:******valid score at epoch 3: 0.681 :
+INFO:model.cnn:validation score is improved from 0.646 to 0.681
+INFO:model.cnn:Checkpoint saved
+  5%|▌         | 3/60 [4:07:30<76:31:45, 4833.43s/it]INFO:model.cnn:training 4  / 60 epochs
+INFO:model.cnn:******train loss at epoch 4: 0.1711599 :
+INFO:model.cnn:******train score at epoch 4: 0.684 :
+INFO:model.cnn:******valid loss at epoch 4: 0.1509412 :
+INFO:model.cnn:******valid score at epoch 4: 0.710 :
+INFO:model.cnn:validation score is improved from 0.681 to 0.710
+INFO:model.cnn:Checkpoint saved
+  7%|▋         | 4/60 [5:34:13<76:54:43, 4944.35s/it]INFO:model.cnn:training 5  / 60 epochs
+INFO:model.cnn:******train loss at epoch 5: 0.1637551 :
+INFO:model.cnn:******train score at epoch 5: 0.724 :
+INFO:model.cnn:******valid loss at epoch 5: 0.1484315 :
+INFO:model.cnn:******valid score at epoch 5: 0.729 :
+INFO:model.cnn:validation score is improved from 0.710 to 0.729
+INFO:model.cnn:Checkpoint saved
+  8%|▊         | 5/60 [7:01:01<76:44:45, 5023.36s/it]INFO:model.cnn:training 6  / 60 epochs
+INFO:model.cnn:******train loss at epoch 6: 0.1563027 :
+INFO:model.cnn:******train score at epoch 6: 0.760 :
+INFO:model.cnn:******valid loss at epoch 6: 0.1447642 :
+INFO:model.cnn:******valid score at epoch 6: 0.754 :
+INFO:model.cnn:validation score is improved from 0.729 to 0.754
+INFO:model.cnn:Checkpoint saved
+ 10%|█         | 6/60 [8:27:51<76:11:31, 5079.46s/it]INFO:model.cnn:training 7  / 60 epochs
+INFO:model.cnn:******train loss at epoch 7: 0.1496460 :
+INFO:model.cnn:******train score at epoch 7: 0.788 :
+INFO:model.cnn:******valid loss at epoch 7: 0.1423216 :
+INFO:model.cnn:******valid score at epoch 7: 0.771 :
+INFO:model.cnn:validation score is improved from 0.754 to 0.771
+INFO:model.cnn:Checkpoint saved
+ 12%|█▏        | 7/60 [9:54:44<75:22:08, 5119.41s/it]INFO:model.cnn:training 8  / 60 epochs
+INFO:model.cnn:******train loss at epoch 8: 0.1442056 :
+INFO:model.cnn:******train score at epoch 8: 0.809 :
+INFO:model.cnn:******valid loss at epoch 8: 0.1400205 :
+INFO:model.cnn:******valid score at epoch 8: 0.782 :
+INFO:model.cnn:validation score is improved from 0.771 to 0.782
+INFO:model.cnn:Checkpoint saved
+ 13%|█▎        | 8/60 [11:21:39<74:21:49, 5148.25s/it]INFO:model.cnn:training 9  / 60 epochs
+INFO:model.cnn:******train loss at epoch 9: 0.1398291 :
+INFO:model.cnn:******train score at epoch 9: 0.824 :
+INFO:model.cnn:******valid loss at epoch 9: 0.1408278 :
+INFO:model.cnn:******valid score at epoch 9: 0.780 :
+ 15%|█▌        | 9/60 [12:48:31<73:12:17, 5167.41s/it]INFO:model.cnn:training 10  / 60 epochs
+INFO:model.cnn:******train loss at epoch 10: 0.1360387 :
+INFO:model.cnn:******train score at epoch 10: 0.836 :
+INFO:model.cnn:******valid loss at epoch 10: 0.1385436 :
+INFO:model.cnn:******valid score at epoch 10: 0.792 :
+INFO:model.cnn:validation score is improved from 0.782 to 0.792
+INFO:model.cnn:Checkpoint saved
+ 17%|█▋        | 10/60 [14:15:29<71:58:40, 5182.41s/it]INFO:model.cnn:training 11  / 60 epochs
+INFO:model.cnn:******train loss at epoch 11: 0.1322171 :
+INFO:model.cnn:******train score at epoch 11: 0.847 :
+INFO:model.cnn:******valid loss at epoch 11: 0.1394441 :
+INFO:model.cnn:******valid score at epoch 11: 0.791 :
+ 18%|█▊        | 11/60 [15:42:23<70:40:07, 5192.00s/it]INFO:model.cnn:training 12  / 60 epochs
+INFO:model.cnn:******train loss at epoch 12: 0.1288473 :
+INFO:model.cnn:******train score at epoch 12: 0.857 :
+INFO:model.cnn:******valid loss at epoch 12: 0.1392986 :
+INFO:model.cnn:******valid score at epoch 12: 0.795 :
+INFO:model.cnn:validation score is improved from 0.792 to 0.795
+INFO:model.cnn:Checkpoint saved
+ 20%|██        | 12/60 [17:09:20<69:19:27, 5199.32s/it]INFO:model.cnn:training 13  / 60 epochs
+INFO:model.cnn:******train loss at epoch 13: 0.1252431 :
+INFO:model.cnn:******train score at epoch 13: 0.867 :
+INFO:model.cnn:******valid loss at epoch 13: 0.1369953 :
+INFO:model.cnn:******valid score at epoch 13: 0.803 :
+INFO:model.cnn:validation score is improved from 0.795 to 0.803
+INFO:model.cnn:Checkpoint saved
+ 22%|██▏       | 13/60 [18:36:19<67:57:24, 5205.21s/it]INFO:model.cnn:training 14  / 60 epochs
+INFO:model.cnn:******train loss at epoch 14: 0.1218902 :
+INFO:model.cnn:******train score at epoch 14: 0.875 :
+INFO:model.cnn:******valid loss at epoch 14: 0.1391224 :
+INFO:model.cnn:******valid score at epoch 14: 0.801 :
+ 23%|██▎       | 14/60 [20:03:15<66:33:19, 5208.69s/it]INFO:model.cnn:training 15  / 60 epochs
+INFO:model.cnn:******train loss at epoch 15: 0.1192536 :
+INFO:model.cnn:******train score at epoch 15: 0.882 :
+INFO:model.cnn:******valid loss at epoch 15: 0.1373122 :
+INFO:model.cnn:******valid score at epoch 15: 0.804 :
+INFO:model.cnn:validation score is improved from 0.803 to 0.804
+INFO:model.cnn:Checkpoint saved
+ 25%|██▌       | 15/60 [21:30:15<65:09:03, 5212.09s/it]INFO:model.cnn:training 16  / 60 epochs
+INFO:model.cnn:******train loss at epoch 16: 0.1161685 :
+INFO:model.cnn:******train score at epoch 16: 0.890 :
+INFO:model.cnn:******valid loss at epoch 16: 0.1394513 :
+INFO:model.cnn:******valid score at epoch 16: 0.805 :
+INFO:model.cnn:validation score is improved from 0.804 to 0.805
+INFO:model.cnn:Checkpoint saved
+ 27%|██▋       | 16/60 [22:57:18<63:44:33, 5215.31s/it]INFO:model.cnn:training 17  / 60 epochs
+INFO:model.cnn:******train loss at epoch 17: 0.1133914 :
+INFO:model.cnn:******train score at epoch 17: 0.896 :
+INFO:model.cnn:******valid loss at epoch 17: 0.1389397 :
+INFO:model.cnn:******valid score at epoch 17: 0.807 :
+INFO:model.cnn:validation score is improved from 0.805 to 0.807
+INFO:model.cnn:Checkpoint saved
+ 28%|██▊       | 17/60 [24:24:21<62:19:19, 5217.66s/it]INFO:model.cnn:training 18  / 60 epochs
+INFO:model.cnn:******train loss at epoch 18: 0.1108280 :
+INFO:model.cnn:******train score at epoch 18: 0.902 :
+INFO:model.cnn:******valid loss at epoch 18: 0.1423717 :
+INFO:model.cnn:******valid score at epoch 18: 0.805 :
+ 30%|███       | 18/60 [25:51:21<60:52:47, 5218.28s/it]INFO:model.cnn:training 19  / 60 epochs
+INFO:model.cnn:******train loss at epoch 19: 0.1080900 :
+INFO:model.cnn:******train score at epoch 19: 0.908 :
+INFO:model.cnn:******valid loss at epoch 19: 0.1406968 :
+INFO:model.cnn:******valid score at epoch 19: 0.808 :
+INFO:model.cnn:validation score is improved from 0.807 to 0.808
+INFO:model.cnn:Checkpoint saved
+ 32%|███▏      | 19/60 [27:18:23<59:26:36, 5219.43s/it]INFO:model.cnn:training 20  / 60 epochs
+INFO:model.cnn:******train loss at epoch 20: 0.1053488 :
+INFO:model.cnn:******train score at epoch 20: 0.913 :
+INFO:model.cnn:******valid loss at epoch 20: 0.1425107 :
+INFO:model.cnn:******valid score at epoch 20: 0.809 :
+INFO:model.cnn:validation score is improved from 0.808 to 0.809
+INFO:model.cnn:Checkpoint saved
+ 33%|███▎      | 20/60 [28:45:25<58:00:10, 5220.26s/it]INFO:model.cnn:training 21  / 60 epochs
+INFO:model.cnn:******train loss at epoch 21: 0.1029264 :
+INFO:model.cnn:******train score at epoch 21: 0.918 :
+INFO:model.cnn:******valid loss at epoch 21: 0.1406895 :
+INFO:model.cnn:******valid score at epoch 21: 0.809 :
+ 35%|███▌      | 21/60 [30:12:24<56:32:49, 5219.74s/it]INFO:model.cnn:training 22  / 60 epochs
+INFO:model.cnn:******train loss at epoch 22: 0.1003117 :
+INFO:model.cnn:******train score at epoch 22: 0.924 :
+INFO:model.cnn:******valid loss at epoch 22: 0.1419112 :
+INFO:model.cnn:******valid score at epoch 22: 0.810 :
+INFO:model.cnn:validation score is improved from 0.809 to 0.810
+INFO:model.cnn:Checkpoint saved
+ 37%|███▋      | 22/60 [31:39:26<55:06:15, 5220.40s/it]INFO:model.cnn:training 23  / 60 epochs
+INFO:model.cnn:******train loss at epoch 23: 0.0979008 :
+INFO:model.cnn:******train score at epoch 23: 0.928 :
+INFO:model.cnn:******valid loss at epoch 23: 0.1436015 :
+INFO:model.cnn:******valid score at epoch 23: 0.810 :
+INFO:model.cnn:validation score is improved from 0.810 to 0.810
+INFO:model.cnn:Checkpoint saved
+ 38%|███▊      | 23/60 [33:06:28<53:39:35, 5220.95s/it]INFO:model.cnn:training 24  / 60 epochs
+INFO:model.cnn:******train loss at epoch 24: 0.0953320 :
+INFO:model.cnn:******train score at epoch 24: 0.932 :
+INFO:model.cnn:******valid loss at epoch 24: 0.1445229 :
+INFO:model.cnn:******valid score at epoch 24: 0.812 :
+INFO:model.cnn:validation score is improved from 0.810 to 0.812
+INFO:model.cnn:Checkpoint saved
+ 40%|████      | 24/60 [34:33:33<52:13:14, 5222.07s/it]INFO:model.cnn:training 25  / 60 epochs
+INFO:model.cnn:******train loss at epoch 25: 0.0928758 :
+INFO:model.cnn:******train score at epoch 25: 0.937 :
+INFO:model.cnn:******valid loss at epoch 25: 0.1445860 :
+INFO:model.cnn:******valid score at epoch 25: 0.808 :
+ 42%|████▏     | 25/60 [36:00:32<50:45:44, 5221.27s/it]INFO:model.cnn:training 26  / 60 epochs
+INFO:model.cnn:******train loss at epoch 26: 0.0904278 :
+INFO:model.cnn:******train score at epoch 26: 0.941 :
+INFO:model.cnn:******valid loss at epoch 26: 0.1472936 :
+INFO:model.cnn:******valid score at epoch 26: 0.807 :
+ 43%|████▎     | 26/60 [37:27:32<49:18:26, 5220.78s/it]INFO:model.cnn:training 27  / 60 epochs
+INFO:model.cnn:******train loss at epoch 27: 0.0877516 :
+INFO:model.cnn:******train score at epoch 27: 0.945 :
+INFO:model.cnn:******valid loss at epoch 27: 0.1534198 :
+INFO:model.cnn:******valid score at epoch 27: 0.802 :
+ 45%|████▌     | 27/60 [38:54:32<47:51:20, 5220.61s/it]INFO:model.cnn:training 28  / 60 epochs
