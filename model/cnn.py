@@ -220,5 +220,4 @@ class VGG16Wrapper(object):
         logger.info("predicting %d samples...".format(len(dataset)))
         dataloader = DataLoader(dataset, batch_size=batch_size)
         self.model.eval()
-        return np.vstack([self.model(x).cpu().detach().numpy() for x in tqdm(dataloader)])
-
+        return np.vstack([torch.sigmoid(self.model(x)).cpu().detach().numpy() for x in tqdm(dataloader)])
