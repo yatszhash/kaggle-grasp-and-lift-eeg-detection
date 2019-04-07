@@ -20,6 +20,14 @@ The method is very simple.
 
 Please see the paper in detail.  
 
+## result
+
+| local | public LB | private LB|  
+|:---|:---|:---|
+| 0.94273 |0.49211| 0.55177 |
+
+It seems largely over-fitted to train data.  
+That is probably due to data leakage or some mistakes in implementation ...
 
 ## TODO 
-- [ ] compute local /public LB/private LB score
+- [ ] retrain (but currently I don't have enough machine resource)
